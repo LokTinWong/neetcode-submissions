@@ -1,5 +1,8 @@
 class Solution {
     public boolean isValid(String s) {
+        // Runtime: Beats 100%
+        // Memory: Beats 45.57%
+        
         Stack<Character> openBrackets = new Stack<>();
         
         if (s.length() % 2 != 0) {
