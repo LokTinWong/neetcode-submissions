@@ -23,6 +23,10 @@ public:
             curr = next;
         }
 
+        // This if statement is probably unnecessary.
+        // Up to this point, we haven't reassigned the head pointer.
+        // If head == NULL, so will prev, because the while loop above never ran.
+        // head = prev = NULL, meaning nothing changed because the list is empty.
         if (head != NULL) {
             head = prev;
         }
